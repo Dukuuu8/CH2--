@@ -1,0 +1,126 @@
+:root {
+  /*  Primay */
+--dark-cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+   /* Neutral */
+--very-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+background-color: var(--cream);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: calc(100vh - 1px);
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 1.25em;
+    border-bottom-left-radius: 1.25em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    border-radius: 1.25em;
+    width: 32.5em;
+    padding-right: 2.25em;
+}
+
+h1 {
+    font-family: "Fraunces";
+    line-height: 0.925em;
+    margin-top: 0.5em;
+}
+
+h6 {
+    color: var(--very-dark-blue);
+    font-family: "Montserrat";
+    color: var(--dark-grayish-blue);
+    margin-top: 2.5em;
+    letter-spacing: 0.75em;
+}
+
+.text {
+    padding:0;
+    margin:0;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-left: 1.5em;
+}
+
+.description {
+    margin-top: 1.5em;
+color: var(--dark-grayish-blue);
+}
+
+span {
+    display: flex;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+
+.price {
+color: var(--dark-cyan);
+font-size: 1.5em;
+font-family: "Fraunces";
+font-weight: bold;
+margin: 0;
+}
+
+.discount {
+    color: var(--dark-grayish-blue);
+    font-size: 0.75em;
+    text-decoration: line-through;
+    display:inline-block;
+    margin-top: 0.3em;
+    padding-top: 0.25em;
+    margin-left: 1em;
+}
+
+button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border-radius: 5px;
+    border: 0;
+    font-size: 0.75em;
+    font-family: "Montserrat";
+    padding: 1em 5em;
+    margin-left: 1.850em;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+button:active {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+     font-size: 11px;
+     text-align: center;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
